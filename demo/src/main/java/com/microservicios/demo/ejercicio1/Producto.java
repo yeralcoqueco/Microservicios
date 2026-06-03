@@ -15,7 +15,11 @@ public class Producto implements  Pagable, Serializable {
     public double calcularTotal(){
         return this.precio = (double) this.cantidad;
     }
-    
+
+    public double calcularPago() {
+        return 0;
+    }
+
     public double aplicarDescuento(double porcentaje){
         double total = this.calcularTotal();
         return total - (total * porcentaje / 100);

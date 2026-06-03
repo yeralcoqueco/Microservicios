@@ -2,7 +2,7 @@ package com.microservicios.demo.ejercicio1;
 
 public  interface Pagable {
 
-    double CalcularPago();
+    double calcularPago();
 
     double aplicarDescuento(double porcentaje);
 

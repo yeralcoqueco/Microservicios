@@ -6,7 +6,7 @@ public class Servicio implements Pagable, Serializable {
     private double precioHora;
     private double horasTrabajadas;
 
-    public Servicio(String descripcion, double precio, int cantidad){
+    public Servicio(String descripcion, double precioHora, int horasTrabajadas){
         this.descripcion = descripcion;
         this.precioHora = precioHora;
         this.horasTrabajadas = horasTrabajadas;
@@ -14,6 +14,10 @@ public class Servicio implements Pagable, Serializable {
 
     public double calcularTotal(){
         return this.precioHora = (double) this.horasTrabajadas;
+    }
+
+    public double calcularPago() {
+        return 0;
     }
 
     public double aplicarDescuento(double porcentaje){
