@@ -15,7 +15,7 @@ public class FlotaController {
     }
 
     @GetMapping("/comparar")
-    public ComparacionFlota comparar(@RequestParam double distancia) {
+    public String comparar(@RequestParam double distancia) {
         return service.compararFlota(distancia);
     }
 }
